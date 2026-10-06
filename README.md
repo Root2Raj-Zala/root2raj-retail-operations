@@ -4,7 +4,7 @@
 
 A Root2Raj portfolio case study by Ruturajsinh Zala, implemented with AI assistance using a historical public dataset. This is portfolio work, not client work or employment experience. Ruturajsinh holds an MSc in Data Science from the University of East London (May 2025). The implementation does not establish the owner's independent coding proficiency.
 
-[Root2Raj data analytics portfolio](https://root2raj.ruturaj1zala123.chatgpt.site/) · [About Ruturajsinh Zala](https://root2raj.ruturaj1zala123.chatgpt.site/about/) · [Retail analysis case study](https://root2raj.ruturaj1zala123.chatgpt.site/projects/retail-operations/) · [Data-quality methodology](https://root2raj.ruturaj1zala123.chatgpt.site/methodology/) · [LinkedIn](https://www.linkedin.com/in/ruturajsinh-zala-1820a7278)
+[Root2Raj data analytics portfolio](https://root2raj.ruturaj1zala123.chatgpt.site/) · [About Ruturajsinh Zala](https://root2raj.ruturaj1zala123.chatgpt.site/about/) · [Retail analysis case study](https://root2raj.ruturaj1zala123.chatgpt.site/projects/retail-operations/) · [Data-quality methodology](https://root2raj.ruturaj1zala123.chatgpt.site/methodology/) · [LinkedIn](https://www.linkedin.com/in/ruturajsinh-zala-b11392157)
 
 ## Business question
 How much of recorded positive invoice value remains after cancellation credits, and how reliable are the customer and trend views?
