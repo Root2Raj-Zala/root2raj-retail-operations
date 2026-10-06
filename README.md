@@ -1,6 +1,10 @@
-# Retail revenue, with the credits left in
+# Root2Raj Retail Data Analysis | Ruturajsinh Zala
 
-A Root2Raj portfolio case study, implemented with AI assistance using a historical public dataset. This is portfolio work, not client work or employment experience. The portfolio owner holds an MSc in Data Science from the University of East London (May 2025).
+## Retail revenue, with the credits left in
+
+A Root2Raj portfolio case study by Ruturajsinh Zala, implemented with AI assistance using a historical public dataset. This is portfolio work, not client work or employment experience. Ruturajsinh holds an MSc in Data Science from the University of East London (May 2025). The implementation does not establish the owner's independent coding proficiency.
+
+[Root2Raj data analytics portfolio](https://root2raj.ruturaj1zala123.chatgpt.site/) · [About Ruturajsinh Zala](https://root2raj.ruturaj1zala123.chatgpt.site/about/) · [Retail analysis case study](https://root2raj.ruturaj1zala123.chatgpt.site/projects/retail-operations/) · [Data-quality methodology](https://root2raj.ruturaj1zala123.chatgpt.site/methodology/) · [LinkedIn](https://www.linkedin.com/in/ruturajsinh-zala-1820a7278)
 
 ## Business question
 How much of recorded positive invoice value remains after cancellation credits, and how reliable are the customer and trend views?
@@ -37,4 +41,3 @@ Investigate the largest credited stock codes and invoice linkage. Keep credits a
 
 ## Attribution
 Chen, D. (2015). Online Retail [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5BW33. https://archive.ics.uci.edu/dataset/352/online%2Bretail. CC BY 4.0. The analysis cleans and aggregates the original data; no endorsement is implied.
-
