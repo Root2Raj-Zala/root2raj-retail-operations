@@ -41,3 +41,11 @@ Investigate the largest credited stock codes and invoice linkage. Keep credits a
 
 ## Attribution
 Chen, D. (2015). Online Retail [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5BW33. https://archive.ics.uci.edu/dataset/352/online%2Bretail. CC BY 4.0. The analysis cleans and aggregates the original data; no endorsement is implied.
+
+## Portfolio research extensions
+
+By **[Ruturajsinh Zala (Root2Raj)](https://root2raj.ruturaj1zala123.chatgpt.site/about/)**. Root2Raj is my personal coding username.
+
+[Credit linkage under uncertainty](https://root2raj.ruturaj1zala123.chatgpt.site/projects/retail-credit-linkage/) · [Retail demand forecasting benchmark](https://root2raj.ruturaj1zala123.chatgpt.site/projects/retail-demand-forecasting/)
+
+The methods, measured results and limitations are described in the case studies. Source and reproduction instructions are in [contributions](contributions/README.md).
