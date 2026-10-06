@@ -1,0 +1,163 @@
+{
+  "schema_version": "1.0.0",
+  "layer": "gold",
+  "tables": {
+    "scenario_summary": {
+      "grain": [
+        "window_days",
+        "policy"
+      ],
+      "row_count": 8,
+      "fields": [
+        {
+          "name": "window_days",
+          "sql_type": "INTEGER",
+          "nullable": false,
+          "nonnegative": true
+        },
+        {
+          "name": "policy",
+          "sql_type": "TEXT",
+          "nullable": false,
+          "nonnegative": false
+        },
+        {
+          "name": "matched_value_gbp",
+          "sql_type": "REAL",
+          "nullable": false,
+          "nonnegative": true
+        },
+        {
+          "name": "unmatched_identified_value_gbp",
+          "sql_type": "REAL",
+          "nullable": false,
+          "nonnegative": true
+        },
+        {
+          "name": "missing_id_credit_value_gbp",
+          "sql_type": "REAL",
+          "nullable": false,
+          "nonnegative": true
+        },
+        {
+          "name": "all_credit_value_gbp",
+          "sql_type": "REAL",
+          "nullable": false,
+          "nonnegative": true
+        },
+        {
+          "name": "identified_credit_value_gbp",
+          "sql_type": "REAL",
+          "nullable": false,
+          "nonnegative": true
+        },
+        {
+          "name": "coverage_all_pct",
+          "sql_type": "REAL",
+          "nullable": false,
+          "nonnegative": true
+        },
+        {
+          "name": "coverage_identified_pct",
+          "sql_type": "REAL",
+          "nullable": false,
+          "nonnegative": true
+        },
+        {
+          "name": "value_weighted_lag_days",
+          "sql_type": "REAL",
+          "nullable": false,
+          "nonnegative": false
+        }
+      ]
+    },
+    "lag_distribution": {
+      "grain": [
+        "window_days",
+        "policy",
+        "lag_bucket"
+      ],
+      "row_count": 40,
+      "fields": [
+        {
+          "name": "window_days",
+          "sql_type": "INTEGER",
+          "nullable": false,
+          "nonnegative": true
+        },
+        {
+          "name": "policy",
+          "sql_type": "TEXT",
+          "nullable": false,
+          "nonnegative": false
+        },
+        {
+          "name": "lag_bucket",
+          "sql_type": "TEXT",
+          "nullable": false,
+          "nonnegative": false
+        },
+        {
+          "name": "matched_value_gbp",
+          "sql_type": "REAL",
+          "nullable": false,
+          "nonnegative": true
+        }
+      ]
+    },
+    "monthly_linkage": {
+      "grain": [
+        "window_days",
+        "policy",
+        "month"
+      ],
+      "row_count": 104,
+      "fields": [
+        {
+          "name": "window_days",
+          "sql_type": "INTEGER",
+          "nullable": false,
+          "nonnegative": true
+        },
+        {
+          "name": "policy",
+          "sql_type": "TEXT",
+          "nullable": false,
+          "nonnegative": false
+        },
+        {
+          "name": "month",
+          "sql_type": "TEXT",
+          "nullable": false,
+          "nonnegative": false
+        },
+        {
+          "name": "matched_value_gbp",
+          "sql_type": "REAL",
+          "nullable": false,
+          "nonnegative": true
+        },
+        {
+          "name": "identified_credit_value_gbp",
+          "sql_type": "REAL",
+          "nullable": false,
+          "nonnegative": true
+        },
+        {
+          "name": "all_credit_value_gbp",
+          "sql_type": "REAL",
+          "nullable": false,
+          "nonnegative": true
+        },
+        {
+          "name": "coverage_all_pct",
+          "sql_type": "REAL",
+          "nullable": false,
+          "nonnegative": true
+        }
+      ]
+    }
+  },
+  "freshness": "Static historical snapshot; no scheduled ingestion or live freshness claim",
+  "breaking_change_rule": "Increase major version if a field type, primary key, target, or denominator changes"
+}

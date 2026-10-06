@@ -1,0 +1,65 @@
+{
+  "manifest_version": "1.0.0",
+  "experiment": "Capacity-constrained credit candidates under eight predefined matching scenarios",
+  "source": {
+    "name": "UCI Online Retail",
+    "doi": "10.24432/C5BW33",
+    "license": "CC BY 4.0",
+    "workbook_sha256": "43465a06f2ccf7c8b5bd2892bc7defb52f97487934fe93b16ae4c3936424676d"
+  },
+  "implementation_sha256": "91ed60978e1c3e464c0505d84be151d1e48da3ca0cfac4bcb6b562303536810e",
+  "layers": [
+    {
+      "id": "bronze",
+      "grain": "Original invoice line",
+      "operation": "Unchanged workbook; source hash and schema verification"
+    },
+    {
+      "id": "silver",
+      "grain": "Deduplicated invoice line",
+      "operation": "Exact duplicate removal and explicit sale/credit classification"
+    },
+    {
+      "id": "experiment",
+      "grain": "Defined in notebook",
+      "operation": "Capacity-constrained credit candidates under eight predefined matching scenarios"
+    },
+    {
+      "id": "gold",
+      "grain": "Declared primary keys",
+      "operation": "Aggregate evidence exported under executable SQLite STRICT contracts"
+    }
+  ],
+  "edges": [
+    [
+      "bronze",
+      "silver"
+    ],
+    [
+      "silver",
+      "experiment"
+    ],
+    [
+      "experiment",
+      "gold"
+    ]
+  ],
+  "privacy": "No invoice or customer identifiers in gold outputs; source workbook is not redistributed",
+  "tables": [
+    {
+      "name": "scenario_summary",
+      "csv_sha256": "def8bfdc3dc5bf90a7e8224d5a180d71107b68f2b9fb755ffa254854c6b94520",
+      "rows": 8
+    },
+    {
+      "name": "lag_distribution",
+      "csv_sha256": "26322f57fd49ec866e9ba12270caa752b14d4137c52882bfee6c8ea7fdbe5d76",
+      "rows": 40
+    },
+    {
+      "name": "monthly_linkage",
+      "csv_sha256": "3dcf79e64645b5e34cf57f06362dd8b038fa54e211d374807849cab3bf4b2277",
+      "rows": 104
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "manifest_version": "1.0.0",
+  "experiment": "One-day-ahead demand benchmark with training-only catalog selection and chronological holdout",
+  "source": {
+    "name": "UCI Online Retail",
+    "doi": "10.24432/C5BW33",
+    "license": "CC BY 4.0",
+    "workbook_sha256": "43465a06f2ccf7c8b5bd2892bc7defb52f97487934fe93b16ae4c3936424676d"
+  },
+  "implementation_sha256": "74cd55c5c4fff701a846874dce2e5a51eea5b99aa3bd1ad5fa58f6189de421c1",
+  "layers": [
+    {
+      "id": "bronze",
+      "grain": "Original invoice line",
+      "operation": "Unchanged workbook; source hash and schema verification"
+    },
+    {
+      "id": "silver",
+      "grain": "Deduplicated invoice line",
+      "operation": "Exact duplicate removal and explicit sale/credit classification"
+    },
+    {
+      "id": "experiment",
+      "grain": "Defined in notebook",
+      "operation": "One-day-ahead demand benchmark with training-only catalog selection and chronological holdout"
+    },
+    {
+      "id": "gold",
+      "grain": "Declared primary keys",
+      "operation": "Aggregate evidence exported under executable SQLite STRICT contracts"
+    }
+  ],
+  "edges": [
+    [
+      "bronze",
+      "silver"
+    ],
+    [
+      "silver",
+      "experiment"
+    ],
+    [
+      "experiment",
+      "gold"
+    ]
+  ],
+  "privacy": "No invoice or customer identifiers in gold outputs; source workbook is not redistributed",
+  "tables": [
+    {
+      "name": "model_scorecard",
+      "csv_sha256": "aecdfe0531c38900fa5491e84b7eceec67bd79d7a30bd96921c325c3feaee388",
+      "rows": 7
+    },
+    {
+      "name": "holdout_forecasts",
+      "csv_sha256": "c3500c9cf4504d613648c161269ff3eae316451a3e9808327407658ae28cfdeb",
+      "rows": 1092
+    },
+    {
+      "name": "per_product_errors",
+      "csv_sha256": "9087cdda546a7d96a650678af98f5df1d218ee7094269ad59b8cdbfe39d3eea0",
+      "rows": 84
+    }
+  ]
+}

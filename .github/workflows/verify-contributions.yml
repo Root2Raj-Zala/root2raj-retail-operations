@@ -1,0 +1,30 @@
+name: Verify contribution algorithms and data contracts
+on:
+  push:
+    paths:
+      - 'contributions/**'
+      - '.github/workflows/verify-contributions.yml'
+  pull_request:
+    paths:
+      - 'contributions/**'
+      - '.github/workflows/verify-contributions.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: contributions
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: contributions/requirements.txt
+      - run: python -m pip install -r requirements.txt
+      - name: Capacity, leakage and SQL contract tests
+        run: python -m unittest -v test_credit_linkage test_demand_benchmark test_evidence_contracts

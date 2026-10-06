@@ -1,0 +1,11 @@
+{
+  "source_sha256": "43465a06f2ccf7c8b5bd2892bc7defb52f97487934fe93b16ae4c3936424676d",
+  "scenario_count": 8,
+  "coverage_90_days_all_pct": [
+    48.23992373965795,
+    48.24089691608556
+  ],
+  "lag_policy_spread_days_90": 3.6850677351641306,
+  "missing_id_credit_value_gbp": 285290.26,
+  "interpretation": "Capacity-constrained candidates, not verified returns"
+}

@@ -1,0 +1,154 @@
+{
+  "schema_version": "1.0.0",
+  "layer": "gold",
+  "tables": {
+    "model_scorecard": {
+      "grain": [
+        "model"
+      ],
+      "row_count": 7,
+      "fields": [
+        {
+          "name": "model",
+          "sql_type": "TEXT",
+          "nullable": false,
+          "nonnegative": false
+        },
+        {
+          "name": "selected_on_validation",
+          "sql_type": "INTEGER",
+          "nullable": false,
+          "nonnegative": false
+        },
+        {
+          "name": "validation_mae_units",
+          "sql_type": "REAL",
+          "nullable": false,
+          "nonnegative": true
+        },
+        {
+          "name": "validation_wape_pct",
+          "sql_type": "REAL",
+          "nullable": false,
+          "nonnegative": true
+        },
+        {
+          "name": "test_mae_units",
+          "sql_type": "REAL",
+          "nullable": false,
+          "nonnegative": true
+        },
+        {
+          "name": "test_wape_pct",
+          "sql_type": "REAL",
+          "nullable": false,
+          "nonnegative": true
+        }
+      ]
+    },
+    "holdout_forecasts": {
+      "grain": [
+        "StockCode",
+        "date"
+      ],
+      "row_count": 1092,
+      "fields": [
+        {
+          "name": "StockCode",
+          "sql_type": "TEXT",
+          "nullable": false,
+          "nonnegative": false
+        },
+        {
+          "name": "date",
+          "sql_type": "TEXT",
+          "nullable": false,
+          "nonnegative": false
+        },
+        {
+          "name": "units",
+          "sql_type": "INTEGER",
+          "nullable": false,
+          "nonnegative": true
+        },
+        {
+          "name": "Gradient boosting 15 leaves",
+          "sql_type": "REAL",
+          "nullable": false,
+          "nonnegative": false
+        },
+        {
+          "name": "Gradient boosting 31 leaves",
+          "sql_type": "REAL",
+          "nullable": false,
+          "nonnegative": false
+        },
+        {
+          "name": "Trailing 7-day mean",
+          "sql_type": "REAL",
+          "nullable": false,
+          "nonnegative": false
+        },
+        {
+          "name": "Same weekday last week",
+          "sql_type": "REAL",
+          "nullable": false,
+          "nonnegative": false
+        },
+        {
+          "name": "Yesterday",
+          "sql_type": "REAL",
+          "nullable": false,
+          "nonnegative": false
+        },
+        {
+          "name": "Ridge alpha=100",
+          "sql_type": "REAL",
+          "nullable": false,
+          "nonnegative": false
+        },
+        {
+          "name": "Ridge alpha=1",
+          "sql_type": "REAL",
+          "nullable": false,
+          "nonnegative": false
+        }
+      ]
+    },
+    "per_product_errors": {
+      "grain": [
+        "StockCode",
+        "model"
+      ],
+      "row_count": 84,
+      "fields": [
+        {
+          "name": "StockCode",
+          "sql_type": "TEXT",
+          "nullable": false,
+          "nonnegative": false
+        },
+        {
+          "name": "model",
+          "sql_type": "TEXT",
+          "nullable": false,
+          "nonnegative": false
+        },
+        {
+          "name": "mae_units",
+          "sql_type": "REAL",
+          "nullable": false,
+          "nonnegative": true
+        },
+        {
+          "name": "wape_pct",
+          "sql_type": "REAL",
+          "nullable": false,
+          "nonnegative": true
+        }
+      ]
+    }
+  },
+  "freshness": "Static historical snapshot; no scheduled ingestion or live freshness claim",
+  "breaking_change_rule": "Increase major version if a field type, primary key, target, or denominator changes"
+}

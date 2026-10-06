@@ -1,0 +1,19 @@
+{
+  "source_hash_verified": true,
+  "exactly_12_training_selected_products": true,
+  "validation_after_train": true,
+  "test_after_validation": true,
+  "test_has_91_days_per_product": true,
+  "finite_nonnegative_predictions": true,
+  "selection_agrees_with_validation_score": true,
+  "no_partial_december_in_test": true,
+  "model_scorecard_sql_row_count": true,
+  "model_scorecard_duplicate_key_rejected": true,
+  "holdout_forecasts_sql_row_count": true,
+  "holdout_forecasts_duplicate_key_rejected": true,
+  "per_product_errors_sql_row_count": true,
+  "per_product_errors_duplicate_key_rejected": true,
+  "sql_integrity_check": true,
+  "synthetic_tests_passed": true,
+  "synthetic_test_count": 10
+}

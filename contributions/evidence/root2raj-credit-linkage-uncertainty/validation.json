@@ -1,0 +1,17 @@
+{
+  "source_rows_verified": true,
+  "source_hash_verified": true,
+  "coverage_bounded": true,
+  "value_conservation": true,
+  "lag_bucket_reconciliation": true,
+  "monthly_reconciliation": true,
+  "scenario_summary_sql_row_count": true,
+  "scenario_summary_duplicate_key_rejected": true,
+  "lag_distribution_sql_row_count": true,
+  "lag_distribution_duplicate_key_rejected": true,
+  "monthly_linkage_sql_row_count": true,
+  "monthly_linkage_duplicate_key_rejected": true,
+  "sql_integrity_check": true,
+  "synthetic_tests_passed": true,
+  "synthetic_test_count": 12
+}
