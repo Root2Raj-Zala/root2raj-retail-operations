@@ -4,3 +4,6 @@ openpyxl>=3.1,<4
 matplotlib>=3.8,<4
 scikit-learn>=1.4,<2
 threadpoolctl>=3.1,<4
+nbformat>=5.10,<6
+nbclient>=0.10,<1
+ipykernel>=6.29,<8

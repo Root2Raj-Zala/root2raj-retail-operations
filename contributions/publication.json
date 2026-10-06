@@ -1,0 +1,133 @@
+{
+  "published_at_utc": "2026-10-06T14:49:32.486897+00:00",
+  "brand": "Root2Raj",
+  "focus": [
+    "Data Science",
+    "Data Architecture"
+  ],
+  "portfolio_context": "AI-assisted public-data experiments; not employment or client work",
+  "kaggle_notebooks": [
+    {
+      "title": "Root2Raj Credit Linkage Under Uncertainty",
+      "url": "https://www.kaggle.com/code/ruturajsinhzala/root2raj-credit-linkage-under-uncertainty",
+      "version": 2,
+      "script_version_id": 355783998,
+      "visibility": "public",
+      "license": "Apache 2.0",
+      "run_status": "successful",
+      "runtime_seconds": 160.5,
+      "pinned_on_profile": true,
+      "synthetic_tests": 12,
+      "local_directory": "root2raj-credit-linkage-uncertainty"
+    },
+    {
+      "title": "Root2Raj Retail Demand Forecasting Benchmark",
+      "url": "https://www.kaggle.com/code/ruturajsinhzala/root2raj-retail-demand-forecasting-benchmark",
+      "version": 2,
+      "script_version_id": 355784326,
+      "visibility": "public",
+      "license": "Apache 2.0",
+      "run_status": "successful",
+      "runtime_seconds": 94.9,
+      "pinned_on_profile": true,
+      "synthetic_tests": 10,
+      "local_directory": "root2raj-retail-demand-benchmark"
+    }
+  ],
+  "kaggle_forecast_displayed_results": {
+    "validation_winner": "Gradient boosting 31 leaves",
+    "test_wape_pct": 79.07,
+    "weekday_baseline_test_wape_pct": 106.83,
+    "relative_error_reduction_vs_weekday_pct": 25.99,
+    "precision": "Rounded values verified in the rendered public notebook"
+  },
+  "kaggle_environment": {
+    "python": "3.13.15",
+    "pandas": "2.3.3",
+    "numpy": "2.1.3",
+    "matplotlib": "3.10.0",
+    "scikit-learn": "1.6.1"
+  },
+  "local_forecast_results": {
+    "source_sha256": "43465a06f2ccf7c8b5bd2892bc7defb52f97487934fe93b16ae4c3936424676d",
+    "target": "Daily positive units for 12 training-selected merchandise-style codes",
+    "validation_winner": "Gradient boosting 15 leaves",
+    "test_wape_pct": 78.70440295207243,
+    "weekday_baseline_test_wape_pct": 106.83034654098391,
+    "relative_error_reduction_vs_weekday_pct": 26.32767233243166,
+    "test_period": [
+      "2011-09-01",
+      "2011-11-30"
+    ],
+    "forecast_horizon": "One day ahead with actual observations available through yesterday",
+    "selected_stock_codes": [
+      "23166",
+      "84077",
+      "85099B",
+      "85123A",
+      "21212",
+      "22197",
+      "15036",
+      "22616",
+      "84879",
+      "21977",
+      "17003",
+      "22178"
+    ]
+  },
+  "local_environment": {
+    "python": "3.12.14",
+    "pandas": "3.0.1",
+    "numpy": "2.5.3",
+    "matplotlib": "3.11.2",
+    "scikit-learn": "1.9.1"
+  },
+  "distinct_synthetic_tests": 17,
+  "architecture": {
+    "contract_version": "1.0.0",
+    "database": "SQLite STRICT",
+    "layers": [
+      "bronze source",
+      "silver classification",
+      "gold aggregates"
+    ],
+    "artifacts": [
+      "gold.sqlite",
+      "gold_schema.sql",
+      "data_contracts.json",
+      "lineage.json"
+    ],
+    "latest_kaggle_raw_source_saved_as_output": false
+  },
+  "historical_version_note": "Version 1 saved the unchanged licensed public UCI workbook in working output. Version 2 uses Kaggle temporary input storage; gold has no customer/invoice identifiers.",
+  "github": {
+    "repository": "https://github.com/ruturaj1zala123-source/root2raj-retail-operations",
+    "contributions": "https://github.com/ruturaj1zala123-source/root2raj-retail-operations/tree/main/contributions",
+    "initial_commit": "bf902dcbf7be98ba6ba0e7097151abc224fd3085",
+    "initial_ci": [
+      {
+        "run_id": 37478151820,
+        "conclusion": "success"
+      },
+      {
+        "run_id": 37478151826,
+        "conclusion": "success"
+      }
+    ]
+  },
+  "profile": {
+    "url": "https://www.kaggle.com/ruturajsinhzala",
+    "bio_saved": true,
+    "github_link_saved": true,
+    "linkedin_link_saved": true,
+    "featured_work": [
+      "Root2Raj Credit Linkage Under Uncertainty",
+      "Root2Raj Retail Demand Forecasting Benchmark"
+    ]
+  },
+  "source": {
+    "doi": "10.24432/C5BW33",
+    "license": "CC BY 4.0",
+    "sha256": "43465a06f2ccf7c8b5bd2892bc7defb52f97487934fe93b16ae4c3936424676d"
+  }
+}
