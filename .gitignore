@@ -1,0 +1,5 @@
+data/
+outputs/*.sqlite
+.venv/
+__pycache__/
+*.pyc

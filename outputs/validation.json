@@ -1,0 +1,10 @@
+{
+  "expected_row_count": true,
+  "row_partition_reconciles": true,
+  "duplicates_reconcile": true,
+  "value_reconciles": true,
+  "monthly_value_reconciles": true,
+  "known_customer_coverage_bounded": true,
+  "credit_value_nonnegative": true,
+  "sqlite_value_reconciles": true
+}

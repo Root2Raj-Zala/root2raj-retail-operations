@@ -1,0 +1,260 @@
+{
+  "title": "Retail revenue, with the credits left in",
+  "source": {
+    "name": "UCI Online Retail",
+    "author": "Daqing Chen",
+    "year": 2015,
+    "doi": "10.24432/C5BW33",
+    "url": "https://archive.ics.uci.edu/dataset/352/online%2Bretail",
+    "download_url": "https://archive.ics.uci.edu/static/public/352/online%2Bretail.zip",
+    "license": "CC BY 4.0",
+    "file_sha256": "43465a06f2ccf7c8b5bd2892bc7defb52f97487934fe93b16ae4c3936424676d",
+    "period_start": "2010-12-01T08:26:00",
+    "period_end": "2011-12-09T12:50:00"
+  },
+  "computed_at_utc": "2026-10-06T12:27:55.078388+00:00",
+  "metrics": {
+    "gross_positive_invoice_value": 10642110.8,
+    "cancellation_credit_value": 893979.73,
+    "negative_adjustment_value": 0.0,
+    "net_recorded_invoice_value": 9748131.07,
+    "credit_to_gross_value_pct": 8.4,
+    "positive_invoices": 19960,
+    "identified_purchasing_customers": 4338,
+    "top_decile_known_customer_revenue_share_pct": 61.45,
+    "top_decile_customer_count": 434,
+    "known_customer_sales_coverage_pct": 83.51
+  },
+  "audit": {
+    "raw_rows": 541909,
+    "exact_duplicates_removed": 5268,
+    "rows_after_deduplication": 536641,
+    "sale_rows": 524878,
+    "cancellation_credit_rows": 9251,
+    "negative_adjustment_rows": 0,
+    "excluded_rows": 2512,
+    "missing_customer_ids_raw": 135080,
+    "missing_customer_pct_raw": 24.93,
+    "missing_descriptions_raw": 1454,
+    "gross_sales_with_duplicates": 10666684.54,
+    "gross_sales_duplicate_difference": 24573.74,
+    "known_customer_gross_sales": 8887208.89
+  },
+  "checks": {
+    "expected_row_count": true,
+    "row_partition_reconciles": true,
+    "duplicates_reconcile": true,
+    "value_reconciles": true,
+    "monthly_value_reconciles": true,
+    "known_customer_coverage_bounded": true,
+    "credit_value_nonnegative": true,
+    "sqlite_value_reconciles": true
+  },
+  "monthly": [
+    {
+      "month": "2010-12",
+      "gross_sales": 821452.73,
+      "credit_value": 74729.12,
+      "net_recorded_value": 746723.61,
+      "positive_invoices": 1559,
+      "partial_month": false
+    },
+    {
+      "month": "2011-01",
+      "gross_sales": 689811.61,
+      "credit_value": 131363.05,
+      "net_recorded_value": 558448.56,
+      "positive_invoices": 1086,
+      "partial_month": false
+    },
+    {
+      "month": "2011-02",
+      "gross_sales": 522545.56,
+      "credit_value": 25519.15,
+      "net_recorded_value": 497026.41,
+      "positive_invoices": 1100,
+      "partial_month": false
+    },
+    {
+      "month": "2011-03",
+      "gross_sales": 716215.26,
+      "credit_value": 34201.28,
+      "net_recorded_value": 682013.98,
+      "positive_invoices": 1454,
+      "partial_month": false
+    },
+    {
+      "month": "2011-04",
+      "gross_sales": 536968.49,
+      "credit_value": 44600.65,
+      "net_recorded_value": 492367.84,
+      "positive_invoices": 1246,
+      "partial_month": false
+    },
+    {
+      "month": "2011-05",
+      "gross_sales": 769296.61,
+      "credit_value": 47202.51,
+      "net_recorded_value": 722094.1,
+      "positive_invoices": 1681,
+      "partial_month": false
+    },
+    {
+      "month": "2011-06",
+      "gross_sales": 760547.01,
+      "credit_value": 70569.78,
+      "net_recorded_value": 689977.23,
+      "positive_invoices": 1533,
+      "partial_month": false
+    },
+    {
+      "month": "2011-07",
+      "gross_sales": 718076.12,
+      "credit_value": 37919.13,
+      "net_recorded_value": 680156.99,
+      "positive_invoices": 1475,
+      "partial_month": false
+    },
+    {
+      "month": "2011-08",
+      "gross_sales": 757841.38,
+      "credit_value": 54330.8,
+      "net_recorded_value": 703510.58,
+      "positive_invoices": 1361,
+      "partial_month": false
+    },
+    {
+      "month": "2011-09",
+      "gross_sales": 1056435.19,
+      "credit_value": 38838.51,
+      "net_recorded_value": 1017596.68,
+      "positive_invoices": 1837,
+      "partial_month": false
+    },
+    {
+      "month": "2011-10",
+      "gross_sales": 1151263.73,
+      "credit_value": 81895.5,
+      "net_recorded_value": 1069368.23,
+      "positive_invoices": 2040,
+      "partial_month": false
+    },
+    {
+      "month": "2011-11",
+      "gross_sales": 1503866.78,
+      "credit_value": 47720.98,
+      "net_recorded_value": 1456145.8,
+      "positive_invoices": 2769,
+      "partial_month": false
+    },
+    {
+      "month": "2011-12",
+      "gross_sales": 637790.33,
+      "credit_value": 205089.27,
+      "net_recorded_value": 432701.06,
+      "positive_invoices": 819,
+      "partial_month": true
+    }
+  ],
+  "countries": [
+    {
+      "country": "United Kingdom",
+      "gross_sales": 9001744.09,
+      "gross_share_pct": 84.59
+    },
+    {
+      "country": "Netherlands",
+      "gross_sales": 285446.34,
+      "gross_share_pct": 2.68
+    },
+    {
+      "country": "EIRE",
+      "gross_sales": 283140.52,
+      "gross_share_pct": 2.66
+    },
+    {
+      "country": "Germany",
+      "gross_sales": 228678.4,
+      "gross_share_pct": 2.15
+    },
+    {
+      "country": "France",
+      "gross_sales": 209625.37,
+      "gross_share_pct": 1.97
+    },
+    {
+      "country": "Australia",
+      "gross_sales": 138453.81,
+      "gross_share_pct": 1.3
+    },
+    {
+      "country": "Spain",
+      "gross_sales": 61558.56,
+      "gross_share_pct": 0.58
+    },
+    {
+      "country": "Switzerland",
+      "gross_sales": 57067.6,
+      "gross_share_pct": 0.54
+    }
+  ],
+  "largest_credited_codes": [
+    {
+      "stock_code": "AMAZONFEE",
+      "description": "AMAZON FEE",
+      "credit_value": 235281.59,
+      "gross_sales": 13761.09
+    },
+    {
+      "stock_code": "23843",
+      "description": "PAPER CRAFT , LITTLE BIRDIE",
+      "credit_value": 168469.6,
+      "gross_sales": 168469.6
+    },
+    {
+      "stock_code": "M",
+      "description": "Manual",
+      "credit_value": 146784.46,
+      "gross_sales": 77750.27
+    },
+    {
+      "stock_code": "23166",
+      "description": "MEDIUM CERAMIC TOP STORAGE JAR",
+      "credit_value": 77479.64,
+      "gross_sales": 81700.92
+    },
+    {
+      "stock_code": "POST",
+      "description": "POSTAGE",
+      "credit_value": 11871.24,
+      "gross_sales": 78101.88
+    },
+    {
+      "stock_code": "22423",
+      "description": "REGENCY CAKESTAND 3 TIER",
+      "credit_value": 9697.05,
+      "gross_sales": 174156.54
+    },
+    {
+      "stock_code": "CRUK",
+      "description": "CRUK Commission",
+      "credit_value": 7933.43,
+      "gross_sales": 0.0
+    },
+    {
+      "stock_code": "BANK CHARGES",
+      "description": "Bank Charges",
+      "credit_value": 7340.64,
+      "gross_sales": 165.0
+    }
+  ],
+  "limitations": [
+    "Historical, single-retailer data from 2010-2011; not a description of today's retail market.",
+    "Exact duplicate removal is an explicit assumption; identical invoice lines might represent legitimate repeats. The revenue sensitivity is reported.",
+    "Cancellation invoice codes identify credits; no matching to original sale invoices has been established. Credit-to-gross value is not a product return rate.",
+    "Recorded invoice values include non-merchandise codes and exclude invalid, zero-price or inconsistent lines; they are not audited accounts or profit.",
+    "Customer concentration uses only identified purchasers and positive sales; missing customer IDs limit coverage.",
+    "December 2011 ends on December 9 and must not be compared directly with full months.",
+    "The data cannot establish why cancellations occurred or whether an intervention would improve performance."
+  ]
+}
