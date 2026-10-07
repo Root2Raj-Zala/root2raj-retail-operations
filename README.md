@@ -49,3 +49,12 @@ By **[Ruturajsinh Zala (Root2Raj)](https://root2raj.ruturaj1zala123.chatgpt.site
 [Credit linkage under uncertainty](https://root2raj.ruturaj1zala123.chatgpt.site/projects/retail-credit-linkage/) · [Retail demand forecasting benchmark](https://root2raj.ruturaj1zala123.chatgpt.site/projects/retail-demand-forecasting/)
 
 The methods, measured results and limitations are described in the case studies. Source and reproduction instructions are in [contributions](contributions/README.md).
+
+## Articles by Ruturajsinh Zala (Root2Raj)
+
+- [WAPE is not forecast accuracy](https://root2raj.ruturaj1zala123.chatgpt.site/blog/wape-is-not-forecast-accuracy/): WAPE is total absolute forecast error divided by total actual observed units. It measures error, can exceed 100%, and should be reported beside a baseline, an explicit forecast horizon and a held-out period.
+- [Cancellation credits are not verified returns](https://root2raj.ruturaj1zala123.chatgpt.site/blog/cancellation-credits-are-not-verified-returns/): A cancellation credit records a negative invoice value, but does not necessarily identify the original purchase. Candidate matching should enforce time order and finite sale capacity, publish unmatched value and expose sensitivity to the allocation policy.
+- [SQLite data contracts for reproducible analysis](https://root2raj.ruturaj1zala123.chatgpt.site/blog/sqlite-data-contracts-for-reproducible-analysis/): A data contract states what each row represents, which fields and keys are valid, and what a consumer can assume. SQLite STRICT types, primary keys, NOT NULL and CHECK constraints can enforce part of that contract; reconciliation, provenance and semantic tests remain necessary.
+
+[Browse the article collection](https://root2raj.ruturaj1zala123.chatgpt.site/blog/) · [Subscribe to the RSS feed](https://root2raj.ruturaj1zala123.chatgpt.site/feed.xml)
+
